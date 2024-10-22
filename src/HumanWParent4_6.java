@@ -5,22 +5,18 @@ public class HumanWParent4_6 {
     private int height;
     private HumanWParent4_6 father;
 
-    // Конструктор с именем в виде строки и ростом
     HumanWParent4_6(String name, int height) {
         this(new Name4_5(name), height, null);
     }
 
-    // Конструктор с именем в виде строки, ростом и отцом
     HumanWParent4_6(String name, int height, HumanWParent4_6 father) {
         this(new Name4_5(name), height, father);
     }
 
-    // Конструктор с именем в виде объекта Name и ростом
     HumanWParent4_6(Name4_5 name, int height) {
         this(name, height, null);
     }
 
-    // Основной конструктор с именем, ростом и отцом
     HumanWParent4_6(Name4_5 name, int height, HumanWParent4_6 father) {
         this.name = name;
         this.height = height;
@@ -31,7 +27,6 @@ public class HumanWParent4_6 {
         }
     }
 
-    // Геттеры и сеттеры
     Name4_5 setName(Name4_5 name) {
         this.name = name;
         return this.name;
