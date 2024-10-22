@@ -52,6 +52,6 @@ public class Name {
         if (patronymic != null && !patronymic.isEmpty()) {
             result.append(patronymic);
         }
-        return result.toString().trim(); // Удаляем лишние пробелы в начале и конце
+        return result.toString().trim();
     }
 }
